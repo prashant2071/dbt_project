@@ -1,0 +1,8 @@
+version: 2
+sources:
+  - name: transaction_data
+    description: has transaction data
+    schema: public
+    tables:
+      - name: transaction
+        description: has transaction data

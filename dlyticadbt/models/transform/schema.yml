@@ -1,0 +1,29 @@
+version: 2
+sources:
+  - name: banking_data
+    description: "Source data for transactions and accounts"
+    schema: public
+    tables:
+      - name: transaction
+        description: "Contains banking transactions"
+      - name: account
+        description: "Contains bank account details"
+
+models:
+  - name: transaction_timestamp
+    description: "Cleaned and transformed transaction data"
+    columns:
+      - name: transaction_id
+        description: "Unique identifier for each transaction"
+        tests:
+          - unique
+          - not_null
+
+  - name: account_timestamp
+    description: "Cleaned and transformed account data"
+    columns:
+      - name: acid
+        description: "Unique identifier for each account"
+        tests:
+          - unique
+          - not_null
