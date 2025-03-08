@@ -1,0 +1,1 @@
+select foracid,DATEDIFF(CURRENT_DATE,account_open_date::timestamp) as account_age_days

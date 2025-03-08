@@ -6,6 +6,9 @@ profile: 'dlyticadbt'
 vars:
   exchange_rate: 139.39
   digital_flag: 'Y'
+  interval: 1
+  dormant_time: 6
+  high_value_threshold: 50000
 
 # These configurations specify where dbt should look for different types of files.
 model-paths: ["models"]
